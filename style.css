@@ -1,59 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #fff6f8;
-    color: #333;
+  background-color: #f9f9ed; /* cream background */
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #ffccd5;
-    padding: 15px;
-    text-align: center;
+/* Navbar */
+.custom-navbar {
+  background-color: #fff3c6; /* soft yellow */
+  border-bottom: 1px solid #000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #b30047;
+.nav-link.custom-link {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 0.9rem;
 }
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #b30047;
+.brand-text {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2a2a2a;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Hero Box */
+.hero-box {
+  background-color: #fff3c6;
+  border-radius: 40% / 15%;
+  max-width: 500px;
 }
 
-.intro {
-    padding: 20px;
-    text-align: center;
+.sub-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2a2a2a;
 }
 
-#searchBar {
-    padding: 8px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-}
-
-#tipsList {
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
-}
-
-.tip {
-    background-color: #ffe6eb;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #ffccd5;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+.main-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2a2a2a;
 }
