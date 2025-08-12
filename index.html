@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SoNaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SoNaba</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="wellness.html">Wellness Tips</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Welcome to SoNaba</h2>
+        <p>A space for beauty, wellness, and confidence — founded as part of my KKCF fellowship journey.</p>
+        <input type="text" id="searchBar" placeholder="Search wellness tips..." onkeyup="searchTips()">
+    </section>
+
+    <section id="tipsList">
+        <div class="tip">Drink at least 8 glasses of water a day.</div>
+        <div class="tip">Take 10 minutes to stretch every morning.</div>
+        <div class="tip">Prioritize skincare with gentle, daily care.</div>
+        <div class="tip">Spend time in nature for mental clarity.</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SoNaba | Created during the KKCF High School Fellowship</p>
+    </footer>
+
+    <script>
+        function searchTips() {
+            var input = document.getElementById("searchBar").value.toLowerCase();
+            var tips = document.getElementsByClassName("tip");
+            for (var i = 0; i < tips.length; i++) {
+                var text = tips[i].textContent.toLowerCase();
+                tips[i].style.display = text.includes(input) ? "block" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
