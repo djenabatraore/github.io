@@ -1,47 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SoNaba</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - SōNaba</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>SoNaba</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="wellness.html">Wellness Tips</a>
-        </nav>
-    </header>
 
-    <section class="intro">
-        <h2>Welcome to SoNaba</h2>
-        <p>A space for beauty, wellness, and confidence — founded as part of my KKCF fellowship journey.</p>
-        <input type="text" id="searchBar" placeholder="Search wellness tips..." onkeyup="searchTips()">
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid justify-content-between px-5">
+      <div class="d-flex gap-4">
+        <a class="nav-link custom-link" href="index.html">HOME</a>
+        <a class="nav-link custom-link" href="#">BLOG</a>
+      </div>
 
-    <section id="tipsList">
-        <div class="tip">Drink at least 8 glasses of water a day.</div>
-        <div class="tip">Take 10 minutes to stretch every morning.</div>
-        <div class="tip">Prioritize skincare with gentle, daily care.</div>
-        <div class="tip">Spend time in nature for mental clarity.</div>
-    </section>
+      <a class="navbar-brand mx-auto brand-text" href="#">SŌNABA</a>
 
-    <footer>
-        <p>&copy; Djenaba Traore</p>
-    </footer>
-
-    <script>
-        function searchTips() {
-            var input = document.getElementById("searchBar").value.toLowerCase();
-            var tips = document.getElementsByClassName("tip");
-            for (var i = 0; i < tips.length; i++) {
-                var text = tips[i].textContent.toLowerCase();
-                tips[i].style.display = text.includes(input) ? "block" : "none";
-            }
-        }
-    </script>
-</body>
-</html>
+      <div class="d-flex gap-4">
+        <a class="nav-link custom-link" href="about.html">ABOUT</a>
+        <a class="nav-link custom-link" href="#">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  <!-- HERO SECTION -->
+  <div class="hero-box text-center mx-auto my-5 p-5">
+    <h2 class="sub-text">COME HANG WITH</h2>
+    <h1 class="main-text">DJENABA</h1>
+  </div>
