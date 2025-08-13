@@ -1,14 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 body {
-  background-color: #FFEEEE;
-  font-family: 'Krona One', static;
+  background-color: #FFEEEE; /* soft pink background */
+  font-family: 'Krona One', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-
 .custom-navbar {
   background-color: #FEDCE4; 
   border-bottom: 1px solid #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.brand-text {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2a2a2a;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 .nav-link.custom-link {
@@ -17,31 +32,53 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 0.9rem;
+  margin: 0 15px;
 }
 
-.brand-text {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #2a2a2a;
+.nav-link.custom-link:hover {
+  opacity: 0.7;
 }
 
-
-..hero-box {
+.hero-box {
   background-color: #FEDCE4;
   border-radius: 40% / 15%;
   max-width: 700px;
-  padding: 40px; 
+  padding: 40px;  
+  margin: 40px auto;
+  text-align: center;
 }
 
 .sub-text {
   font-size: 1.5rem;
   font-weight: 500;
   color: #2a2a2a;
+  margin: 0;
 }
 
 .main-text {
   font-size: 3rem;
   font-weight: 700;
   color: #2a2a2a;
+  margin: 5px 0 0;
+}
+
+/* Blog Posts */
+#blogPosts {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tip {
+  background-color: #FEDCE4;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FEDCE4;
+  margin-top: 20px;
 }
